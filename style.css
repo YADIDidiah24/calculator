@@ -1,0 +1,134 @@
+*{
+    border-radius: 500px;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue", sans-serif;
+     min-height: 100vh;
+     background-color:rgb(197, 18, 18);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+
+#calculator{
+    width: 300px;
+    height: 540px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: black;
+    overflow: hidden;
+}
+#b1{
+    border: 1px outset ;
+    background: #545964;
+    color: #ff9500;
+    padding: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 1px;
+    position: absolute;
+  
+    right: 50px;
+    bottom: 20px;
+
+}
+.color button{
+    background: none;
+    outline: none;
+    color: azure;
+    border: 3px solid white;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+.box{
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    pointer-events: none;
+    text-align: right;
+    align-items: flex-end;
+
+}
+
+button{
+    flex: 0 0 22%;
+    border: 1px #636363;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 1px;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 3.8px 5px;
+}
+
+#last_operation_history {
+    height: 2px;
+    font-size: 1.8vh;
+    text-align:right;
+    padding-right: 1.5vh;
+    color: rgb(177, 176, 176);
+    background-color: black;
+}
+
+
+
+button:hover{
+background-color:#8e0101;
+color: azure;
+transition: 0.8 ease-in-out;
+}
+
+#uniquebutton{
+    
+    display: inline-block;
+    width: 200%;
+    text-indent: 0.6cm;
+    border-radius: 40px;
+    margin: 5px 5px;
+    text-align: left;
+    align-items: stretch;
+}
+
+.btn-yellow{
+
+    background:#ff9500;
+    color: white;
+}
+
+.btn-grey{
+
+    background: #505050;
+    color:white;
+}
+
+
+
+.btn-white {
+    background: #d4d4d2;
+    
+}
+
+#eq{
+    border-color: #08288a;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" src="app.js" type="text/javascript"></script>
+    <title>calculator</title>
+</head>
+<body>
+   <div id="calculator">
+       
+        <p id="last_operation_history"></p>
+        
+        <p id="box" class="box">0</p>
+        <table id="table">
+            <tr>
+                <td><button class="btn-white" onclick="button_clear()">C</button></td>
+                <td><button class="btn-white" onclick="plus_minus()">+/-</button></td>
+                <td><button class="btn-white" onclick="calculate_percentage()">%</button></td>
+                <td><button id="divOp" value="/" class="btn-yellow operator" onclick="button_number('/')">÷</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-grey" onclick="button_number(7)">7</button></td>
+                <td><button class="btn-grey" onclick="button_number(8)">8</button></td>
+                <td><button class="btn-grey" onclick="button_number(9)">9</button></td>
+                <td><button id="multiOp" value="*" class="btn-yellow operator" onclick="button_number('*')">×</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-grey" onclick="button_number(4)">4</button></td>
+                <td><button class="btn-grey" onclick="button_number(5)">5</button></td>
+                <td><button class="btn-grey" onclick="button_number(6)">6</button></td>
+                <td><button id="subOp" value="-" class="btn-yellow  operator" onclick="button_number('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-grey" onclick="button_number(1)">1</button></td>
+                <td><button class="btn-grey" onclick="button_number(2)">2</button></td>
+                <td><button class="btn-grey" onclick="button_number(3)">3</button></td> 
+                <td><button id="plusOp" value="+" class="btn-yellow operator" onclick="button_number('+')">+</button></td>           
+                
+            </tr>
+            <tr>
+               
+                <td><button id="uniquebutton" class="btn-grey"  onclick="button_number(0)">0</button></td>
+                <td></td>
+                <td><button id="dot" value="."class="btn-grey"  onclick="button_number('.')">.</button></td>
+                <td colspan="4"><button value="=" class="btn-yellow operator" id="equal_sign" onclick="button_number('=')">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+   
+    <div class="color">
+        <span id="hex"></span>
+        <button id="b1" onclick="getRandomColor()">change background</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
